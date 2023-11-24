@@ -56,7 +56,7 @@ ricaricaBtn?.addEventListener('click', function () {
 durataBtn.addEventListener('click', function () {
   daDeGi.minutiDurata(Number(durata.value))
 
-  nrChiamtate.innerText = `Lei ha effettuato ${daDeGi.getNumeroChiamate()} chiamate`
+  nrChiamtate.innerText = `Chiamate effettuate: ${daDeGi.getNumeroChiamate()} `
   if (daDeGi.getNumeroChiamate() === 0) {
 
   }

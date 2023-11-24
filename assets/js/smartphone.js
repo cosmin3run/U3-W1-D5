@@ -36,7 +36,7 @@ ricaricaBtn === null || ricaricaBtn === void 0 ? void 0 : ricaricaBtn.addEventLi
 });
 durataBtn.addEventListener('click', function () {
     daDeGi.minutiDurata(Number(durata.value));
-    nrChiamtate.innerText = "Lei ha effettuato ".concat(daDeGi.getNumeroChiamate(), " chiamate");
+    nrChiamtate.innerText = "Chiamate effettuate: ".concat(daDeGi.getNumeroChiamate(), " ");
     if (daDeGi.getNumeroChiamate() === 0) {
     }
     creditoDisponibile.innerText = "Il suo credito \u00E8 di ".concat(daDeGi.numero404(), " \u20AC");
