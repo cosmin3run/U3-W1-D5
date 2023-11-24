@@ -57,9 +57,7 @@ durataBtn.addEventListener('click', function () {
   daDeGi.minutiDurata(Number(durata.value))
 
   nrChiamtate.innerText = `Chiamate effettuate: ${daDeGi.getNumeroChiamate()} `
-  if (daDeGi.getNumeroChiamate() === 0) {
-
-  }
+  
   creditoDisponibile.innerText = `Il suo credito è di ${daDeGi.numero404()} €`
   durata.value = ""
 })
