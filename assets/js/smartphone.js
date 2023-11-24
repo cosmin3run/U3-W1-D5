@@ -33,12 +33,24 @@ ricaricaBtn === null || ricaricaBtn === void 0 ? void 0 : ricaricaBtn.addEventLi
     daDeGi.unaRicarica(Number(ricarica.value));
     creditoDisponibile.innerText = "Il suo credito \u00E8 di ".concat(daDeGi.numero404(), " \u20AC");
     ricarica.value = "";
+    if (daDeGi.carica < 0) {
+        creditoDisponibile.className = "red";
+    }
+    else {
+        creditoDisponibile.className = "normal";
+    }
 });
 durataBtn.addEventListener('click', function () {
     daDeGi.minutiDurata(Number(durata.value));
     nrChiamtate.innerText = "Chiamate effettuate: ".concat(daDeGi.getNumeroChiamate(), " ");
     creditoDisponibile.innerText = "Il suo credito \u00E8 di ".concat(daDeGi.numero404(), " \u20AC");
     durata.value = "";
+    if (daDeGi.carica < 0) {
+        creditoDisponibile.className = "red";
+    }
+    else {
+        creditoDisponibile.className = "normal";
+    }
 });
 azzeraBtn.addEventListener('click', function () {
     daDeGi.azzeraChiamate();

@@ -51,6 +51,11 @@ ricaricaBtn?.addEventListener('click', function () {
   daDeGi.unaRicarica(Number(ricarica.value))
   creditoDisponibile.innerText = `Il suo credito è di ${daDeGi.numero404()} €`
   ricarica.value = ""
+  if (daDeGi.carica < 0) {
+    creditoDisponibile.className = "red"
+  } else {
+    creditoDisponibile.className = "normal"
+  }
 })
 
 durataBtn.addEventListener('click', function () {
@@ -60,13 +65,17 @@ durataBtn.addEventListener('click', function () {
   
   creditoDisponibile.innerText = `Il suo credito è di ${daDeGi.numero404()} €`
   durata.value = ""
+  if (daDeGi.carica < 0) {
+    creditoDisponibile.className = "red"
+  } else {
+    creditoDisponibile.className = "normal"
+  }
 })
 
 azzeraBtn.addEventListener('click', function() {
   daDeGi.azzeraChiamate()
   nrChiamtate.innerText = `Le chiamate sono state azzerate`
 })
-
 
 
 

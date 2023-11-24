@@ -1,6 +1,14 @@
 .card {
   width: 50%;
 }
+.card-body p {
+  font-size: 30px;
+}
+.normal {
+  font-size: 30px;
+}
+
 .red {
+  font-size: 30px;
   color: red;
 }
